@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "creeps_crawls:block/the_alt_portal_ew"
+    },
+    "axis=x": {
+      "model": "creeps_crawls:block/the_alt_portal_ns"
+    }
+  }
+}

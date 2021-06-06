@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "creeps_crawls:blocks/charred_logs_top",
+    "up": "creeps_crawls:blocks/charred_logs_top",
+    "north": "creeps_crawls:blocks/charred_logs_side",
+    "east": "creeps_crawls:blocks/charred_logs_side",
+    "south": "creeps_crawls:blocks/charred_logs_side",
+    "west": "creeps_crawls:blocks/charred_logs_side",
+    "particle": "creeps_crawls:blocks/charred_logs_top"
+  }
+}

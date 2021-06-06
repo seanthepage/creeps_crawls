@@ -1,0 +1,29 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "creeps_crawls:charredwood"
+    },
+    "title": {
+      "translate": "advancements.enter_charred_frst.title"
+    },
+    "description": {
+      "translate": "advancements.enter_charred_frst.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "enter_charred_frst": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "creeps_crawls:charred_forest"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100
+  }
+}

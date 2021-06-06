@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "creeps_crawls:block/charredwood"
+    },
+    "facing=north": {
+      "model": "creeps_crawls:block/charredwood"
+    },
+    "facing=east": {
+      "model": "creeps_crawls:block/charredwood",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "creeps_crawls:block/charredwood",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "creeps_crawls:block/charredwood",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "creeps_crawls:block/charredwood",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

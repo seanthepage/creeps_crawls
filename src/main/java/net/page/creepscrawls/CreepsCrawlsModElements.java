@@ -46,7 +46,7 @@ public class CreepsCrawlsModElements {
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public CreepsCrawlsModElements() {
 		try {
-			ModFileScanData modFileInfo = ModList.get().getModFileById("creeps__crawls").getFile().getScanResult();
+			ModFileScanData modFileInfo = ModList.get().getModFileById("creeps_crawls").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();
 			for (ModFileScanData.AnnotationData annotationData : annotations) {
 				if (annotationData.getAnnotationType().getClassName().equals(ModElement.Tag.class.getName())) {

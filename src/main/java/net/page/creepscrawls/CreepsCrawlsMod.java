@@ -39,11 +39,11 @@ import net.minecraft.block.Block;
 
 import java.util.function.Supplier;
 
-@Mod("creeps__crawls")
+@Mod("creeps_crawls")
 public class CreepsCrawlsMod {
 	public static final Logger LOGGER = LogManager.getLogger(CreepsCrawlsMod.class);
 	private static final String PROTOCOL_VERSION = "1";
-	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation("creeps__crawls", "creeps__crawls"),
+	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation("creeps_crawls", "creeps_crawls"),
 			() -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
 	public CreepsCrawlsModElements elements;
 	public CreepsCrawlsMod() {

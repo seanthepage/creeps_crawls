@@ -1,0 +1,89 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "CharredForest",
+      "type": "biome",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "charred_forest"
+    },
+    {
+      "name": "Charredwood",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "charredwood"
+    },
+    {
+      "name": "EnterCharredFrst",
+      "type": "achievement",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enter_charred_frst"
+    },
+    {
+      "name": "TheAlt",
+      "type": "dimension",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "the_alt",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "QuartzPlains",
+      "type": "biome",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quartz_plains"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "biome.creeps_crawls.charred_forest": "Charred Forest",
+      "advancements.enter_charred_frst.descr": "Enter a charred forest at night",
+      "item.creeps_crawls.the_alt": "The Alt Portal Igniter",
+      "block.creeps__crawls.charredwood": "Charredwood",
+      "advancements.enter_charred_frst.title": "What is that..?",
+      "biome.creeps__crawls.charred_forest": "Charred Forest",
+      "block.creeps_crawls.charredwood": "Charred Logs",
+      "biome.creeps_crawls.quartz_plains": "Quartz Plains"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "creeps_crawls",
+    "modName": "Creeps \u0026 Crawls",
+    "version": "1.0.0",
+    "author": "spage",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "spage",
+    "modElementsPackage": "net.page.creepscrawls",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}

@@ -1,0 +1,45 @@
+{
+  "_fv": 18,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:CharredForest"
+      },
+      {
+        "value": "CUSTOM:QuartzPlains"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.COAL_BLOCK"
+    },
+    "fluidBlock": {
+      "value": "Blocks.WATER"
+    },
+    "canRespawnHere": true,
+    "hasFog": true,
+    "isDark": false,
+    "doesWaterVaporize": true,
+    "sleepResult": "DENY",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false,
+    "portalFrame": {
+      "value": "Blocks.COAL_BLOCK"
+    },
+    "portalParticles": {
+      "value": "WHITE_ASH"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "The Alt Portal Igniter",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "temp_item",
+    "portalTexture": "charred_logs_side",
+    "enablePortal": true
+  }
+}

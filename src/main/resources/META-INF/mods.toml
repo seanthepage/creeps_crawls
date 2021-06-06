@@ -3,14 +3,14 @@ loaderVersion="[36,)"
 license="Academic Free License v3.0"
 
 [[mods]]
-modId="creeps__crawls"
+modId="creeps_crawls"
 version="1.0.0"
 displayName="Creeps & Crawls"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
+credits="spage"
 displayURL="https://mcreator.net"
-authors="spage, MCreator"
+authors="spage"
 
-[[dependencies.creeps__crawls]]
+[[dependencies.creeps_crawls]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.5]"
