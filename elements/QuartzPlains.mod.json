@@ -4,13 +4,17 @@
   "definition": {
     "name": "Quartz Plains",
     "groundBlock": {
-      "value": "Blocks.QUARTZ_BLOCK#3"
+      "value": "CUSTOM:QuartzSand"
     },
     "undergroundBlock": {
-      "value": "Blocks.QUARTZ_BRICKS"
+      "value": "Blocks.QUARTZ_BLOCK#0"
     },
     "airColor": {
       "value": -2367260,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -1,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -26,9 +30,9 @@
       "value": ""
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "WHITE_ASH"
     },
     "particlesProbability": 0.5,
     "biomeCategory": "NONE",
@@ -38,21 +42,21 @@
     "rainingPossibility": 0.5,
     "temperature": 0.5,
     "baseHeight": 0.1,
-    "heightVariation": 0.2,
+    "heightVariation": 0.1,
     "biomeType": "ICY",
     "spawnBiome": false,
     "biomeWeight": 1,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,
-    "flowersPerChunk": 4,
-    "mushroomsPerChunk": 0,
-    "bigMushroomsChunk": 0,
-    "sandPatchesPerChunk": 0,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 4,
+    "bigMushroomsChunk": 1,
+    "sandPatchesPerChunk": 1,
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 1,
+    "treesPerChunk": 0,
     "vanillaTreeType": "Default",
     "treeType": 0,
     "minHeight": 7,
@@ -81,9 +85,11 @@
     "spawnShipwreck": false,
     "oceanRuinType": "NONE",
     "defaultFeatures": [
-      "Caves",
-      "Ores",
-      "FrozenTopLayer"
+      "Fossils",
+      "Fossils",
+      "Fossils",
+      "SwampClayDisks",
+      "Icebergs"
     ],
     "spawnEntries": []
   }

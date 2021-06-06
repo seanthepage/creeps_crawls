@@ -1,6 +1,7 @@
 
 package net.page.creepscrawls.block;
 
+import net.page.creepscrawls.item.MysticCharItem;
 import net.page.creepscrawls.CreepsCrawlsModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
@@ -110,7 +111,7 @@ public class CharredwoodBlock extends CreepsCrawlsModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(MysticCharItem.block, (int) (1)));
 		}
 
 		@OnlyIn(Dist.CLIENT)

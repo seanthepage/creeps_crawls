@@ -2,6 +2,7 @@
 package net.page.creepscrawls.item;
 
 import net.page.creepscrawls.world.dimension.TheAltDimension;
+import net.page.creepscrawls.procedures.TheAltCanMakePortalProcedure;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -13,6 +14,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
+
+import com.google.common.collect.ImmutableMap;
 
 public class TheAltItem extends Item {
 	@ObjectHolder("creeps_crawls:the_alt")
@@ -33,7 +36,7 @@ public class TheAltItem extends Item {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			if (world.isAirBlock(pos) && true)
+			if (world.isAirBlock(pos) && TheAltCanMakePortalProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
 				TheAltDimension.portal.portalSpawn(world, pos);
 			itemstack.damageItem(1, entity, c -> c.sendBreakAnimation(context.getHand()));
 			return ActionResultType.SUCCESS;

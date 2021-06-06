@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "creeps_crawls:blocks/quartz_sand",
+    "particle": "creeps_crawls:blocks/quartz_sand"
+  }
+}

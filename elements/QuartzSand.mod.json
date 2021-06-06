@@ -2,15 +2,15 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "charred_logs_top",
-    "textureTop": "charred_logs_top",
-    "textureLeft": "charred_logs_side",
-    "textureFront": "charred_logs_side",
-    "textureRight": "charred_logs_side",
-    "textureBack": "charred_logs_side",
-    "renderType": 10,
-    "customModelName": "Normal",
-    "rotationMode": 5,
+    "texture": "quartz_sand",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 11,
+    "customModelName": "Single texture",
+    "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
@@ -32,21 +32,18 @@
         "subtract": false
       }
     ],
-    "name": "Charred Logs",
-    "specialInfo": [
-      "A birch log but much",
-      "much more brittle..."
-    ],
-    "hardness": 0.39999999999999997,
+    "name": "Quartz Sand",
+    "specialInfo": [],
+    "hardness": 1.0,
     "resistance": 10.0,
-    "hasGravity": false,
+    "hasGravity": true,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "MATERIALS"
+      "value": "BUILDING_BLOCKS"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "shovel",
     "customDrop": {
-      "value": "CUSTOM:MysticChar"
+      "value": "Items.QUARTZ"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -55,7 +52,7 @@
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "WOOD"
+      "value": "SAND"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -66,16 +63,16 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 35,
+    "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "reactionToPushing": "DESTROY",
+    "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "WOOD"
+      "value": "SNOW"
     },
     "luminance": 0,
     "unbreakable": false,
@@ -84,8 +81,8 @@
     "particleToSpawn": {
       "value": "WHITE_ASH"
     },
-    "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.20000000149011612,
+    "particleSpawningShape": "Top",
+    "particleSpawningRadious": 0.5,
     "particleAmount": 1,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

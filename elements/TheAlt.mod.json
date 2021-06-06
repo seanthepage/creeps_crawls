@@ -40,6 +40,9 @@
     },
     "texture": "temp_item",
     "portalTexture": "charred_logs_side",
-    "enablePortal": true
+    "enablePortal": true,
+    "portalMakeCondition": {
+      "name": "TheAltCanMakePortal"
+    }
   }
 }
