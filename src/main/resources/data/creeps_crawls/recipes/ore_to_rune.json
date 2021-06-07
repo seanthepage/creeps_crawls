@@ -2,7 +2,7 @@
   "group": "creeps_crawls",
   "type": "minecraft:smelting",
   "experience": 1,
-  "cookingtime": 500,
+  "cookingtime": 1000,
   "ingredient": {
     "item": "creeps_crawls:mystic_ore"
   },

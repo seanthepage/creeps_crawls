@@ -1,0 +1,39 @@
+{
+  "group": "creeps_crawls",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "creeps_crawls:mystic_rune"
+    },
+    "2": {
+      "item": "creeps_crawls:mystic_rune"
+    },
+    "3": {
+      "item": "creeps_crawls:mystic_rune"
+    },
+    "4": {
+      "item": "creeps_crawls:mystic_rune"
+    },
+    "5": {
+      "item": "creeps_crawls:mystic_rune"
+    },
+    "6": {
+      "item": "creeps_crawls:mystic_rune"
+    },
+    "7": {
+      "item": "creeps_crawls:mystic_rune"
+    },
+    "8": {
+      "item": "creeps_crawls:mystic_rune"
+    }
+  },
+  "result": {
+    "item": "creeps_crawls:mystic_armor_chestplate",
+    "count": 1
+  }
+}

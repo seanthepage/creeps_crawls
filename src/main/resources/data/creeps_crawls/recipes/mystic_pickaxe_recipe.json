@@ -1,0 +1,30 @@
+{
+  "group": "creeps_crawls",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "creeps_crawls:mystic_rune"
+    },
+    "1": {
+      "item": "creeps_crawls:mystic_rune"
+    },
+    "2": {
+      "item": "creeps_crawls:mystic_rune"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "creeps_crawls:mystic_pickaxe",
+    "count": 1
+  }
+}

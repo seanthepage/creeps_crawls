@@ -1,0 +1,29 @@
+{
+  "group": "creeps_crawls",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "creeps_crawls:mystic_rune"
+    },
+    "1": {
+      "item": "creeps_crawls:mystic_rune"
+    },
+    "2": {
+      "item": "creeps_crawls:mystic_rune"
+    },
+    "3": {
+      "item": "creeps_crawls:mystic_rune"
+    },
+    "5": {
+      "item": "creeps_crawls:mystic_rune"
+    }
+  },
+  "result": {
+    "item": "creeps_crawls:mystic_armor_helmet",
+    "count": 1
+  }
+}

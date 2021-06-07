@@ -4,6 +4,7 @@ package net.page.creepscrawls.world.biome;
 import net.page.creepscrawls.block.QuartzSandBlock;
 import net.page.creepscrawls.CreepsCrawlsModElements;
 
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -28,7 +29,10 @@ import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.biome.BiomeGenerationSettings;
 import net.minecraft.world.biome.BiomeAmbience;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.particles.ParticleTypes;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EntityClassification;
 import net.minecraft.block.HugeMushroomBlock;
 import net.minecraft.block.Blocks;
 
@@ -47,6 +51,8 @@ public class QuartzPlainsBiome extends CreepsCrawlsModElements.ModElement {
 			if (biome == null) {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-2367260).setWaterColor(4159204).setWaterFogColor(329011)
 						.withSkyColor(-2367260).withFoliageColor(10387789).withGrassColor(-1)
+						.setAmbientSound((net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+								.getValue(new ResourceLocation("ambient.basalt_deltas.loop")))
 						.setParticle(new ParticleEffectAmbience(ParticleTypes.WHITE_ASH, 0.005f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(QuartzSandBlock.block.getDefaultState(),
@@ -86,6 +92,7 @@ public class QuartzPlainsBiome extends CreepsCrawlsModElements.ModElement {
 				DefaultBiomeFeatures.withClayDisks(biomeGenerationSettings);
 				DefaultBiomeFeatures.withIcebergs(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
+				mobSpawnInfo.withSpawner(EntityClassification.AMBIENT, new MobSpawnInfo.Spawners(EntityType.SKELETON, 1, 1, 1));
 				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.NONE).depth(0.1f).scale(0.1f).temperature(0.5f)
 						.downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();

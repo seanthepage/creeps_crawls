@@ -265,6 +265,147 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "enter_alt"
+    },
+    {
+      "name": "MysticPickaxe",
+      "type": "tool",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mystic_pickaxe"
+    },
+    {
+      "name": "MysticAxe",
+      "type": "tool",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mystic_axe"
+    },
+    {
+      "name": "MysticSword",
+      "type": "tool",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mystic_sword"
+    },
+    {
+      "name": "MysticShovel",
+      "type": "tool",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mystic_shovel"
+    },
+    {
+      "name": "MysticHoe",
+      "type": "tool",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mystic_hoe"
+    },
+    {
+      "name": "MysticPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mystic_pickaxe_recipe"
+    },
+    {
+      "name": "MysticAxeRecipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mystic_axe_recipe"
+    },
+    {
+      "name": "MysticSwordRecipe",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mystic_sword_recipe"
+    },
+    {
+      "name": "MysticShovelRecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mystic_shovel_recipe"
+    },
+    {
+      "name": "MysticHoeRecipe",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mystic_hoe_recipe"
+    },
+    {
+      "name": "MysticArmor",
+      "type": "armor",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mystic_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "MysticArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mystic_armor_helmet_recipe"
+    },
+    {
+      "name": "MysticArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mystic_armor_body_recipe"
+    },
+    {
+      "name": "MysticArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mystic_armor_leggings_recipe"
+    },
+    {
+      "name": "MysticArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mystic_armor_boots_recipe"
     }
   ],
   "variable_elements": [],
@@ -272,20 +413,29 @@
   "language_map": {
     "en_us": {
       "advancements.enter_charred_frst.descr": "Enter a charred forest at night",
-      "advancements.enter_alt.descr": "Enter the Alt Rift",
       "block.creeps__crawls.charredwood": "Charredwood",
-      "block.creeps_crawls.mystic_ore": "Mystic Ore",
       "biome.creeps_crawls.quartz_plains": "Quartz Plains",
-      "item.creeps_crawls.mystic_rune": "Mystic Rune",
+      "item.creeps_crawls.mystic_armor_boots": "Mystic Boots",
+      "item.creeps_crawls.mystic_hoe": "Mystic Hoe",
       "advancements.enter_alt.title": "Welcome between",
+      "item.creeps_crawls.mystic_pickaxe": "Mystic Pickaxe",
       "block.creeps_crawls.quartz_sand": "Quartz Sand",
+      "item.creeps_crawls.mystic_shovel": "Mystic Shovel",
       "biome.creeps_crawls.charred_forest": "Charred Forest",
+      "item.creeps_crawls.mystic_armor_helmet": "Mystic Helmet",
+      "item.creeps_crawls.alt_charge": "Alt Charge",
+      "item.creeps_crawls.mystic_axe": "Mystic Axe",
+      "advancements.enter_alt.descr": "Enter the Alt Rift",
+      "block.creeps_crawls.mystic_ore": "Mystic Ore",
+      "item.creeps_crawls.mystic_sword": "Mystic Sword",
+      "item.creeps_crawls.mystic_rune": "Mystic Rune",
+      "item.creeps_crawls.mystic_armor_leggings": "Mystic Leggings",
       "item.creeps_crawls.the_alt": "The Rune of Alt",
       "item.creeps_crawls.mystic_char": "Mystic Char",
       "advancements.enter_charred_frst.title": "What is that..?",
       "biome.creeps__crawls.charred_forest": "Charred Forest",
       "block.creeps_crawls.charredwood": "Charred Logs",
-      "item.creeps_crawls.alt_charge": "Alt Charge"
+      "item.creeps_crawls.mystic_armor_chestplate": "Mystic Chestplate"
     }
   },
   "foldersRoot": {

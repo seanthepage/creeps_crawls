@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "creeps_crawls:items/mystic_leggings"
+  }
+}
