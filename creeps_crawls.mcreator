@@ -122,6 +122,42 @@
           }
         ]
       }
+    },
+    {
+      "name": "TheAltCanTravelThroughPortal",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "the_alt_can_travel_through_portal",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LittleCharredTree",
+      "type": "structure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "little_charred_tree"
+    },
+    {
+      "name": "MedBone1",
+      "type": "structure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "med_bone_1"
     }
   ],
   "variable_elements": [],

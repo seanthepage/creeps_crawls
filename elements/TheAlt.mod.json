@@ -43,6 +43,9 @@
     "enablePortal": true,
     "portalMakeCondition": {
       "name": "TheAltCanMakePortal"
+    },
+    "portalUseCondition": {
+      "name": "TheAltCanTravelThroughPortal"
     }
   }
 }

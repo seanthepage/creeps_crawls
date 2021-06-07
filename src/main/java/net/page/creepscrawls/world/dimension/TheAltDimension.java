@@ -1,6 +1,7 @@
 
 package net.page.creepscrawls.world.dimension;
 
+import net.page.creepscrawls.procedures.TheAltCanTravelThroughPortalProcedure;
 import net.page.creepscrawls.item.TheAltItem;
 import net.page.creepscrawls.CreepsCrawlsModElements;
 
@@ -69,6 +70,7 @@ import it.unimi.dsi.fastutil.objects.Object2ObjectMap;
 
 import com.google.common.collect.Sets;
 import com.google.common.collect.ImmutableSet;
+import com.google.common.collect.ImmutableMap;
 
 @CreepsCrawlsModElements.ModElement.Tag
 public class TheAltDimension extends CreepsCrawlsModElements.ModElement {
@@ -202,7 +204,8 @@ public class TheAltDimension extends CreepsCrawlsModElements.ModElement {
 
 		@Override
 		public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-			if (!entity.isPassenger() && !entity.isBeingRidden() && entity.isNonBoss() && !entity.world.isRemote && true) {
+			if (!entity.isPassenger() && !entity.isBeingRidden() && entity.isNonBoss() && !entity.world.isRemote
+					&& TheAltCanTravelThroughPortalProcedure.executeProcedure(ImmutableMap.of("world", world))) {
 				if (entity.func_242280_ah()) {
 					entity.func_242279_ag();
 				} else if (entity.world.getDimensionKey() != RegistryKey.getOrCreateKey(Registry.WORLD_KEY,
