@@ -194,22 +194,87 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "large_bone_1_loot"
+    },
+    {
+      "name": "MysticOre",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mystic_ore"
+    },
+    {
+      "name": "MysticRune",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mystic_rune"
+    },
+    {
+      "name": "OreToRune",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ore_to_rune"
+    },
+    {
+      "name": "AltChargeLivingEntityIsHitWithItem",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alt_charge_living_entity_is_hit_with_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AltCharge",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alt_charge"
+    },
+    {
+      "name": "RuneToIgniter",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rune_to_igniter"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "advancements.enter_charred_frst.descr": "Enter a charred forest at night",
+      "block.creeps__crawls.charredwood": "Charredwood",
+      "block.creeps_crawls.mystic_ore": "Mystic Ore",
+      "biome.creeps_crawls.quartz_plains": "Quartz Plains",
+      "item.creeps_crawls.mystic_rune": "Mystic Rune",
       "block.creeps_crawls.quartz_sand": "Quartz Sand",
       "biome.creeps_crawls.charred_forest": "Charred Forest",
-      "advancements.enter_charred_frst.descr": "Enter a charred forest at night",
-      "item.creeps_crawls.the_alt": "The Alt Portal Igniter",
+      "item.creeps_crawls.the_alt": "The Rune of Alt",
       "item.creeps_crawls.mystic_char": "Mystic Char",
-      "block.creeps__crawls.charredwood": "Charredwood",
       "advancements.enter_charred_frst.title": "What is that..?",
       "biome.creeps__crawls.charred_forest": "Charred Forest",
       "block.creeps_crawls.charredwood": "Charred Logs",
-      "biome.creeps_crawls.quartz_plains": "Quartz Plains"
+      "item.creeps_crawls.alt_charge": "Alt Charge"
     }
   },
   "foldersRoot": {

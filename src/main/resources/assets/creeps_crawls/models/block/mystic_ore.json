@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "creeps_crawls:blocks/mystic_ore",
+    "particle": "creeps_crawls:blocks/mystic_ore"
+  }
+}

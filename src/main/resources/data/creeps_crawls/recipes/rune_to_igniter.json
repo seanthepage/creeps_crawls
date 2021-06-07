@@ -1,0 +1,42 @@
+{
+  "group": "creeps_crawls",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "creeps_crawls:mystic_char"
+    },
+    "1": {
+      "item": "minecraft:nether_star"
+    },
+    "2": {
+      "item": "creeps_crawls:mystic_char"
+    },
+    "3": {
+      "item": "creeps_crawls:mystic_rune"
+    },
+    "4": {
+      "item": "creeps_crawls:alt_charge"
+    },
+    "5": {
+      "item": "creeps_crawls:mystic_rune"
+    },
+    "6": {
+      "item": "creeps_crawls:mystic_char"
+    },
+    "7": {
+      "item": "creeps_crawls:mystic_rune"
+    },
+    "8": {
+      "item": "creeps_crawls:mystic_char"
+    }
+  },
+  "result": {
+    "item": "creeps_crawls:the_alt",
+    "count": 1
+  }
+}

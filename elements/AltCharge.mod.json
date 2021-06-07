@@ -1,0 +1,38 @@
+{
+  "_fv": 18,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "alt_charge",
+    "customModelName": "Normal",
+    "name": "Alt Charge",
+    "rarity": "EPIC",
+    "creativeTab": {
+      "value": "MATERIALS"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Contains interdementional energy"
+    ],
+    "hasGlow": true,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onEntityHitWith": {
+      "name": "AltChargeLivingEntityIsHitWithItem"
+    }
+  }
+}

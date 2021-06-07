@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:MysticChar"
+      },
+      {
+        "value": "Items.NETHER_STAR"
+      },
+      {
+        "value": "CUSTOM:MysticChar"
+      },
+      {
+        "value": "CUSTOM:MysticRune"
+      },
+      {
+        "value": "CUSTOM:AltCharge"
+      },
+      {
+        "value": "CUSTOM:MysticRune"
+      },
+      {
+        "value": "CUSTOM:MysticChar"
+      },
+      {
+        "value": "CUSTOM:MysticRune"
+      },
+      {
+        "value": "CUSTOM:MysticChar"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:TheAlt"
+    },
+    "name": "rune_to_igniter",
+    "namespace": "mod"
+  }
+}
