@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "creeps_crawls:alt_charge"
+    },
+    "title": {
+      "translate": "advancements.enter_alt.title"
+    },
+    "description": {
+      "translate": "advancements.enter_alt.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "enter_alt": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "creeps_crawls:the_alt"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "parent": "creeps_crawls:enter_charred_frst"
+}
