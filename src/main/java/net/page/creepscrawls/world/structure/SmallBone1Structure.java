@@ -30,17 +30,15 @@ import net.minecraft.util.Rotation;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.Mirror;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.BlockState;
 
 import java.util.Random;
 
 @CreepsCrawlsModElements.ModElement.Tag
-public class LittleCharredTreeStructure extends CreepsCrawlsModElements.ModElement {
+public class SmallBone1Structure extends CreepsCrawlsModElements.ModElement {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
-	public LittleCharredTreeStructure(CreepsCrawlsModElements instance) {
-		super(instance, 11);
+	public SmallBone1Structure(CreepsCrawlsModElements instance) {
+		super(instance, 15);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -54,25 +52,17 @@ public class LittleCharredTreeStructure extends CreepsCrawlsModElements.ModEleme
 					int ck = (pos.getZ() >> 4) << 4;
 					RegistryKey<World> dimensionType = world.getWorld().getDimensionKey();
 					boolean dimensionCriteria = false;
-					if (dimensionType == World.OVERWORLD)
-						dimensionCriteria = true;
 					if (dimensionType == RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("creeps_crawls:the_alt")))
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
-					if ((random.nextInt(1000000) + 1) <= 700000) {
+					if ((random.nextInt(1000000) + 1) <= 200000) {
 						int count = random.nextInt(1) + 1;
 						for (int a = 0; a < count; a++) {
 							int i = ci + random.nextInt(16);
 							int k = ck + random.nextInt(16);
-							int j = world.getHeight(Heightmap.Type.WORLD_SURFACE_WG, i, k);
+							int j = world.getHeight(Heightmap.Type.OCEAN_FLOOR_WG, i, k);
 							j -= 1;
-							BlockState blockAt = world.getBlockState(new BlockPos(i, j, k));
-							boolean blockCriteria = false;
-							if (blockAt.getBlock() == Blocks.GRASS_BLOCK.getDefaultState().getBlock())
-								blockCriteria = true;
-							if (!blockCriteria)
-								continue;
 							Rotation rotation = Rotation.values()[random.nextInt(3)];
 							Mirror mirror = Mirror.values()[random.nextInt(2)];
 							BlockPos spawnTo = new BlockPos(i + 0, j + 1, k + 0);
@@ -80,7 +70,7 @@ public class LittleCharredTreeStructure extends CreepsCrawlsModElements.ModEleme
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
 							Template template = world.getWorld().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("creeps_crawls", "little_charred_tree"));
+									.getTemplateDefaulted(new ResourceLocation("creeps_crawls", "small_bone_1"));
 							if (template == null)
 								return false;
 							template.func_237144_a_(world, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
@@ -93,14 +83,14 @@ public class LittleCharredTreeStructure extends CreepsCrawlsModElements.ModEleme
 			};
 			configuredFeature = feature.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG)
 					.withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG));
-			event.getRegistry().register(feature.setRegistryName("little_charred_tree"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("creeps_crawls:little_charred_tree"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("small_bone_1"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("creeps_crawls:small_bone_1"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;
-		if (new ResourceLocation("creeps_crawls:charred_forest").equals(event.getName()))
+		if (new ResourceLocation("creeps_crawls:quartz_plains").equals(event.getName()))
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;

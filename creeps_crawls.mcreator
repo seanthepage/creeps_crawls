@@ -158,6 +158,42 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "med_bone_1"
+    },
+    {
+      "name": "LargeBone1",
+      "type": "structure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "large_bone_1"
+    },
+    {
+      "name": "SmallBone1",
+      "type": "structure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "small_bone_1"
+    },
+    {
+      "name": "SmallBone2",
+      "type": "structure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "small_bone_2"
+    },
+    {
+      "name": "LargeBone1Loot",
+      "type": "loottable",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "large_bone_1_loot"
     }
   ],
   "variable_elements": [],

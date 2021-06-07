@@ -2,28 +2,27 @@
   "_fv": 18,
   "_type": "structure",
   "definition": {
-    "structure": "little_charred_tree",
+    "structure": "large_bone_1_v2",
     "randomlyRotateStructure": true,
-    "surfaceDetectionType": "First block",
-    "spawnProbability": 700000,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 10000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
-    "spawnHeightOffset": 1,
+    "spawnHeightOffset": -1,
     "spawnXOffset": 0,
     "spawnZOffset": 0,
     "spawnWorldTypes": [
-      "Surface",
       "CUSTOM:TheAlt"
     ],
     "restrictionBlocks": [
       {
-        "value": "Blocks.GRASS"
+        "value": "CUSTOM:QuartzSand"
       }
     ],
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:CharredForest"
+        "value": "CUSTOM:QuartzPlains"
       }
     ],
     "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
