@@ -24,10 +24,8 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "A rune from no Earth"
-    ],
-    "hasGlow": true,
+    "specialInfo": [],
+    "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64
